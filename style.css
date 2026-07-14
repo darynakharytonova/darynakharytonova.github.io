@@ -1,0 +1,334 @@
+/* ===========================
+   DARYNA KHARYTONOVA WEBSITE
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#0b0b0b;
+
+    color:white;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+        NAVIGATION
+=========================== */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(10px);
+
+}
+
+nav{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+.logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34px;
+
+    color:#d8b56d;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+nav a:hover{
+
+    color:#d8b56d;
+
+}
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 30px;
+
+    background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:78px;
+
+    margin-bottom:15px;
+
+    color:white;
+
+}
+
+.hero h2{
+
+    color:#d8b56d;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #d8b56d;
+
+    padding:14px 34px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.buttons a:hover{
+
+    background:#d8b56d;
+
+    color:black;
+
+}
+
+/* ===========================
+        SECTIONS
+=========================== */
+
+section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:110px 30px;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:46px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    margin-bottom:50px;
+
+    color:#d8b56d;
+
+}
+
+/* ===========================
+        CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.cards div{
+
+    background:#171717;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    text-align:center;
+
+    border:1px solid #222;
+
+}
+
+.cards div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d8b56d;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    border-top:1px solid #222;
+
+    color:#888;
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+section h2{
+
+font-size:34px;
+
+}
+
+}
